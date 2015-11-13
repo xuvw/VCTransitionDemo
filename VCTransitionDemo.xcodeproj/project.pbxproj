@@ -10,10 +10,11 @@
 		AD0B96BA1BF5E712002138EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0B96B91BF5E712002138EA /* main.m */; };
 		AD0B96BD1BF5E712002138EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0B96BC1BF5E712002138EA /* AppDelegate.m */; };
 		AD0B96C01BF5E712002138EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0B96BF1BF5E712002138EA /* ViewController.m */; };
-		AD0B96C31BF5E712002138EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0B96C11BF5E712002138EA /* Main.storyboard */; };
 		AD0B96C51BF5E712002138EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD0B96C41BF5E712002138EA /* Images.xcassets */; };
 		AD0B96C81BF5E712002138EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD0B96C61BF5E712002138EA /* LaunchScreen.xib */; };
 		AD0B96D41BF5E712002138EA /* VCTransitionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0B96D31BF5E712002138EA /* VCTransitionDemoTests.m */; };
+		AD0B96E21BF5EEE5002138EA /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0B96E11BF5EEE5002138EA /* ModalViewController.m */; };
+		AD0B96E81BF5F36E002138EA /* ModalTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0B96E71BF5F36E002138EA /* ModalTransitionAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +35,15 @@
 		AD0B96BC1BF5E712002138EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AD0B96BE1BF5E712002138EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AD0B96BF1BF5E712002138EA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AD0B96C21BF5E712002138EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD0B96C41BF5E712002138EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AD0B96C71BF5E712002138EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AD0B96CD1BF5E712002138EA /* VCTransitionDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VCTransitionDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD0B96D21BF5E712002138EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD0B96D31BF5E712002138EA /* VCTransitionDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCTransitionDemoTests.m; sourceTree = "<group>"; };
+		AD0B96E01BF5EEE5002138EA /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		AD0B96E11BF5EEE5002138EA /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		AD0B96E61BF5F36E002138EA /* ModalTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalTransitionAnimation.h; sourceTree = "<group>"; };
+		AD0B96E71BF5F36E002138EA /* ModalTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalTransitionAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +89,13 @@
 				AD0B96BC1BF5E712002138EA /* AppDelegate.m */,
 				AD0B96BE1BF5E712002138EA /* ViewController.h */,
 				AD0B96BF1BF5E712002138EA /* ViewController.m */,
-				AD0B96C11BF5E712002138EA /* Main.storyboard */,
 				AD0B96C41BF5E712002138EA /* Images.xcassets */,
 				AD0B96C61BF5E712002138EA /* LaunchScreen.xib */,
 				AD0B96B71BF5E712002138EA /* Supporting Files */,
+				AD0B96E01BF5EEE5002138EA /* ModalViewController.h */,
+				AD0B96E11BF5EEE5002138EA /* ModalViewController.m */,
+				AD0B96E61BF5F36E002138EA /* ModalTransitionAnimation.h */,
+				AD0B96E71BF5F36E002138EA /* ModalTransitionAnimation.m */,
 			);
 			path = VCTransitionDemo;
 			sourceTree = "<group>";
@@ -199,7 +206,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD0B96C31BF5E712002138EA /* Main.storyboard in Resources */,
 				AD0B96C81BF5E712002138EA /* LaunchScreen.xib in Resources */,
 				AD0B96C51BF5E712002138EA /* Images.xcassets in Resources */,
 			);
@@ -219,6 +225,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD0B96E21BF5EEE5002138EA /* ModalViewController.m in Sources */,
+				AD0B96E81BF5F36E002138EA /* ModalTransitionAnimation.m in Sources */,
 				AD0B96C01BF5E712002138EA /* ViewController.m in Sources */,
 				AD0B96BD1BF5E712002138EA /* AppDelegate.m in Sources */,
 				AD0B96BA1BF5E712002138EA /* main.m in Sources */,
@@ -244,14 +252,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AD0B96C11BF5E712002138EA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD0B96C21BF5E712002138EA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AD0B96C61BF5E712002138EA /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -348,6 +348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VCTransitionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VCTransitionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

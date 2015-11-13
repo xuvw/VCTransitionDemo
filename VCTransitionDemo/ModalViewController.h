@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ModalViewController.h
 //  VCTransitionDemo
 //
 //  Created by heke on 13/11/15.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-<UIViewControllerTransitioningDelegate>
-
+@interface ModalViewController : UIViewController
 
 @end
-

@@ -34,5 +34,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>customURL</key>
+	<string>http://www.bubuko.com/infodetail-542977.html</string>
 </dict>
 </plist>

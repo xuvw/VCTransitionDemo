@@ -37,24 +37,24 @@
     UIView *containerView = [transitionContext containerView];
     [containerView addSubview:toVC.view];
     
+    [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
+        toVC.view.frame = finalFrame;
+    } completion:^(BOOL finished) {
+        [transitionContext completeTransition:YES];
+    }];
     
-    //开始动画，这里使用了UIKit提供的弹簧效果动画，usingSpringWithDamping越接近1弹性效果越不明显，此API在IOS7之后才能使用
-    [UIView animateWithDuration:[self transitionDuration:transitionContext]
-                          delay:0
-         usingSpringWithDamping:0.6
-          initialSpringVelocity:0
-                        options:UIViewAnimationOptionCurveEaseIn
-                     animations:^{
-                         toVC.view.frame = finalFrame;
-                     } completion:^(BOOL finished) {
-                         //通知系统动画切换完成
-                         [transitionContext completeTransition:YES];
-                     }];
-}
-
-// This is a convenience and if implemented will be invoked by the system when the transition context's completeTransition: method is invoked.
-- (void)animationEnded:(BOOL) transitionCompleted {
-    
+//    //开始动画，这里使用了UIKit提供的弹簧效果动画，usingSpringWithDamping越接近1弹性效果越不明显，此API在IOS7之后才能使用
+//    [UIView animateWithDuration:[self transitionDuration:transitionContext]
+//                          delay:0
+//         usingSpringWithDamping:0.6
+//          initialSpringVelocity:0
+//                        options:UIViewAnimationOptionCurveEaseIn
+//                     animations:^{
+//                         toVC.view.frame = finalFrame;
+//                     } completion:^(BOOL finished) {
+//                         //通知系统动画切换完成
+//                         [transitionContext completeTransition:YES];
+//                     }];
 }
 
 @end

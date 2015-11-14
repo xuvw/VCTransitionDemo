@@ -10,18 +10,31 @@
 #import "ModalViewController.h"
 
 #import "ModalTransitionAnimation.h"
+#import "ModalInterActiveTransitionAnimation.h"
+#import "ModalMoveTransitionAnimation.h"
 
 @interface ViewController ()
 
 @property (nonatomic, strong) ModalTransitionAnimation *animation;
 
+@property(nonatomic,strong)ModalInterActiveTransitionAnimation *interActive;
+@property(nonatomic,strong)ModalMoveTransitionAnimation *interActiveAnimation;
+
 @end
 
 @implementation ViewController
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     _animation = [[ModalTransitionAnimation alloc] init];
+    _interActive = [[ModalInterActiveTransitionAnimation alloc] init];
+    _interActiveAnimation = [[ModalMoveTransitionAnimation alloc] init];
+    
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor= [UIColor whiteColor];
     
@@ -38,13 +51,9 @@
     self.modalPresentationStyle = UIModalPresentationFullScreen;
     
     vc.transitioningDelegate = self;
+    [_interActive wireToViewController:vc];
     
     [self presentViewController:vc animated:YES completion:nil];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
@@ -52,8 +61,11 @@
 }
 
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
-    return _animation;
+    return self.interActive.interacting ? _interActiveAnimation : _animation;
     
 }
 
+- (id <UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id <UIViewControllerAnimatedTransitioning>)animator {
+    return self.interActive.interacting ? self.interActive : nil;
+}
 @end

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50AB15621BF76B6400036446 /* ModalMoveTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AB15611BF76B6400036446 /* ModalMoveTransitionAnimation.m */; };
+		50AB15651BF779E200036446 /* ModalInterActiveTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AB15641BF779E200036446 /* ModalInterActiveTransitionAnimation.m */; };
+		50CDD26F1BF63E980024CD7D /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CDD26E1BF63E980024CD7D /* NavigationControllerDelegate.m */; };
+		50CDD2721BF63F300024CD7D /* NavigationTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CDD2711BF63F300024CD7D /* NavigationTransitionAnimation.m */; };
+		50CDD2751BF646900024CD7D /* CotentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CDD2741BF646900024CD7D /* CotentViewController.m */; };
+		50CDD2781BF648130024CD7D /* TabbarTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CDD2771BF648130024CD7D /* TabbarTransitionAnimation.m */; };
+		50CDD27B1BF649980024CD7D /* TabbarControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CDD27A1BF649980024CD7D /* TabbarControllerDelegate.m */; };
 		AD0B96BA1BF5E712002138EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0B96B91BF5E712002138EA /* main.m */; };
 		AD0B96BD1BF5E712002138EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0B96BC1BF5E712002138EA /* AppDelegate.m */; };
 		AD0B96C01BF5E712002138EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0B96BF1BF5E712002138EA /* ViewController.m */; };
@@ -28,6 +35,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50AB15601BF76B6400036446 /* ModalMoveTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalMoveTransitionAnimation.h; sourceTree = "<group>"; };
+		50AB15611BF76B6400036446 /* ModalMoveTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalMoveTransitionAnimation.m; sourceTree = "<group>"; };
+		50AB15631BF779E200036446 /* ModalInterActiveTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalInterActiveTransitionAnimation.h; sourceTree = "<group>"; };
+		50AB15641BF779E200036446 /* ModalInterActiveTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalInterActiveTransitionAnimation.m; sourceTree = "<group>"; };
+		50CDD26D1BF63E980024CD7D /* NavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationControllerDelegate.h; sourceTree = "<group>"; };
+		50CDD26E1BF63E980024CD7D /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDelegate.m; sourceTree = "<group>"; };
+		50CDD2701BF63F300024CD7D /* NavigationTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationTransitionAnimation.h; sourceTree = "<group>"; };
+		50CDD2711BF63F300024CD7D /* NavigationTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationTransitionAnimation.m; sourceTree = "<group>"; };
+		50CDD2731BF646900024CD7D /* CotentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CotentViewController.h; sourceTree = "<group>"; };
+		50CDD2741BF646900024CD7D /* CotentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CotentViewController.m; sourceTree = "<group>"; };
+		50CDD2761BF648130024CD7D /* TabbarTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarTransitionAnimation.h; sourceTree = "<group>"; };
+		50CDD2771BF648130024CD7D /* TabbarTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarTransitionAnimation.m; sourceTree = "<group>"; };
+		50CDD2791BF649980024CD7D /* TabbarControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarControllerDelegate.h; sourceTree = "<group>"; };
+		50CDD27A1BF649980024CD7D /* TabbarControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarControllerDelegate.m; sourceTree = "<group>"; };
 		AD0B96B41BF5E712002138EA /* VCTransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCTransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD0B96B81BF5E712002138EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD0B96B91BF5E712002138EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -96,6 +117,20 @@
 				AD0B96E11BF5EEE5002138EA /* ModalViewController.m */,
 				AD0B96E61BF5F36E002138EA /* ModalTransitionAnimation.h */,
 				AD0B96E71BF5F36E002138EA /* ModalTransitionAnimation.m */,
+				50CDD26D1BF63E980024CD7D /* NavigationControllerDelegate.h */,
+				50CDD26E1BF63E980024CD7D /* NavigationControllerDelegate.m */,
+				50CDD2701BF63F300024CD7D /* NavigationTransitionAnimation.h */,
+				50CDD2711BF63F300024CD7D /* NavigationTransitionAnimation.m */,
+				50CDD2731BF646900024CD7D /* CotentViewController.h */,
+				50CDD2741BF646900024CD7D /* CotentViewController.m */,
+				50CDD2761BF648130024CD7D /* TabbarTransitionAnimation.h */,
+				50CDD2771BF648130024CD7D /* TabbarTransitionAnimation.m */,
+				50CDD2791BF649980024CD7D /* TabbarControllerDelegate.h */,
+				50CDD27A1BF649980024CD7D /* TabbarControllerDelegate.m */,
+				50AB15601BF76B6400036446 /* ModalMoveTransitionAnimation.h */,
+				50AB15611BF76B6400036446 /* ModalMoveTransitionAnimation.m */,
+				50AB15631BF779E200036446 /* ModalInterActiveTransitionAnimation.h */,
+				50AB15641BF779E200036446 /* ModalInterActiveTransitionAnimation.m */,
 			);
 			path = VCTransitionDemo;
 			sourceTree = "<group>";
@@ -225,9 +260,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50CDD27B1BF649980024CD7D /* TabbarControllerDelegate.m in Sources */,
+				50CDD2781BF648130024CD7D /* TabbarTransitionAnimation.m in Sources */,
+				50CDD2721BF63F300024CD7D /* NavigationTransitionAnimation.m in Sources */,
 				AD0B96E21BF5EEE5002138EA /* ModalViewController.m in Sources */,
+				50AB15621BF76B6400036446 /* ModalMoveTransitionAnimation.m in Sources */,
 				AD0B96E81BF5F36E002138EA /* ModalTransitionAnimation.m in Sources */,
+				50AB15651BF779E200036446 /* ModalInterActiveTransitionAnimation.m in Sources */,
+				50CDD26F1BF63E980024CD7D /* NavigationControllerDelegate.m in Sources */,
 				AD0B96C01BF5E712002138EA /* ViewController.m in Sources */,
+				50CDD2751BF646900024CD7D /* CotentViewController.m in Sources */,
 				AD0B96BD1BF5E712002138EA /* AppDelegate.m in Sources */,
 				AD0B96BA1BF5E712002138EA /* main.m in Sources */,
 			);
@@ -418,6 +460,7 @@
 				AD0B96D91BF5E712002138EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD0B96DA1BF5E712002138EA /* Build configuration list for PBXNativeTarget "VCTransitionDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +469,7 @@
 				AD0B96DC1BF5E712002138EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

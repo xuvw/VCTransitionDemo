@@ -8,8 +8,15 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "CotentViewController.h"
+#import "NavigationControllerDelegate.h"
+
+#import "TabbarControllerDelegate.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) NavigationControllerDelegate *naviD;
+@property (nonatomic, strong) TabbarControllerDelegate *tabBarD;
 
 @end
 
@@ -19,8 +26,32 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor blackColor];
-    ViewController *vc = [[ViewController alloc] init];
-    self.window.rootViewController = vc;
+//    //自定义模态视图切换动画
+//    ViewController *vc = [[ViewController alloc] init];
+//    self.window.rootViewController = vc;
+    
+    //自定义导航控制器切换动画
+    self.naviD = [[NavigationControllerDelegate alloc] init];
+    CotentViewController *vc = [[CotentViewController alloc] init];
+    UINavigationController *rootVC = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.naviD.naviVC = rootVC;
+    
+    rootVC.delegate = self.naviD;
+    self.window.rootViewController = rootVC;
+    
+    
+    //自定义tabbar切换动画：
+//    ViewController *vc = [[ViewController alloc] init];
+//    ViewController *vc1 = [[ViewController alloc] init];
+//    UITabBarController *tabbarVC = [[UITabBarController alloc] init];
+//    tabbarVC.viewControllers = @[vc,vc1];
+//    self.tabBarD = [[TabbarControllerDelegate alloc] init];
+//    tabbarVC.delegate = self.tabBarD;
+//    [tabbarVC setSelectedIndex:0];
+//    self.window.rootViewController = tabbarVC;
+    
+//    UIPercentDrivenInteractiveTransition;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
